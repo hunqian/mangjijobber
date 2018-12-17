@@ -1,0 +1,84 @@
+{
+    "name": "userToken",
+    "base": "Model",
+    "idInjection": true,
+    "description":"用户token",
+    "options": {
+        "idInjection": false,
+        "schema": "interstoredev",
+        "mysql": {
+            "table": "user_token"
+        }
+    },
+    "properties": {
+        "id": {
+            "type": "String",
+            "required": false,
+            "length": 50,
+            "precision": null,
+            "scale": null,
+            "id": 1,
+            "mysql": {
+                "columnName": "id",
+                "dataType": "varchar",
+                "dataLength": 50,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "N"
+            }
+        },
+        "validTime": {
+            "type": "Number",
+            "required": false,
+            "length": 20,
+            "precision": null,
+            "scale": null,
+            "description": "有效时间(默认毫秒级别)",
+            "mysql": {
+                "columnName": "valid_time",
+                "dataType": "bigint",
+                "dataLength": 20,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        },
+        "userId": {
+            "type": "Number",
+            "required": false,
+            "length": 11,
+            "precision": null,
+            "scale": null,
+            "description": "用户id",
+            "mysql": {
+                "columnName": "user_id",
+                "dataType": "int",
+                "dataLength": 11,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        },
+        "createTime": {
+            "type": "Date",
+            "required": false,
+            "length": null,
+            "precision": null,
+            "scale": null,
+            "defaultFn": "now",
+            "description": "创建时间",
+            "mysql": {
+                "columnName": "create_time",
+                "dataType": "datetime",
+                "dataLength": null,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

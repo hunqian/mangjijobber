@@ -1,0 +1,21 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysql": {
+    "host": "59.110.174.205",
+    "port": 3306,
+    "url": "",
+    "database": "mangjijobber",
+    "password": "123456",
+    "name": "mysql",
+    "user": "root",
+    "connector": "mysql",
+    "timezone": "+08:00",
+    "legacyUtcDateProcessing": false,
+    "connectTimeout": 100000,
+    "multipleStatements": true,
+    "connectionLimit": 30
+  }
+}

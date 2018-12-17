@@ -1,0 +1,132 @@
+{
+    "name": "user",
+    "base": "Model",
+    "idInjection": true,
+    "description":"用户操作",
+    "options": {
+        "idInjection": false,
+        "schema": "interstoredev",
+        "mysql": {
+            "table": "user"
+        }
+    },
+    "properties": {
+        "id": {
+            "type": "Number",
+            "required": false,
+            "length": null,
+            "precision": 11,
+            "scale": null,
+            "id": 1,
+            "mysql": {
+                "columnName": "id",
+                "dataType": "int",
+                "dataLength": null,
+                "dataPrecision": 11,
+                "dataScale": null,
+                "nullable": "N"
+            }
+        },
+        "name": {
+            "type": "String",
+            "required": false,
+            "length": 50,
+            "precision": null,
+            "scale": null,
+            "descripton": "姓名",
+            "mysql": {
+                "columnName": "name",
+                "dataType": "varchar",
+                "dataLength": 50,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        },
+        "phone": {
+            "type": "String",
+            "required": false,
+            "length": 20,
+            "precision": null,
+            "scale": null,
+            "descripton": "电话",
+            "mysql": {
+                "columnName": "phone",
+                "dataType": "varchar",
+                "dataLength": 20,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        },
+        "password": {
+            "type": "String",
+            "required": false,
+            "length": 50,
+            "precision": null,
+            "scale": null,
+            "descripton": "密码",
+            "mysql": {
+                "columnName": "password",
+                "dataType": "varchar",
+                "dataLength": 50,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        },
+        "createTime": {
+            "type": "Date",
+            "required": false,
+            "length": null,
+            "precision": null,
+            "scale": null,
+            "defaultFn": "now",
+            "description": "创建时间",
+            "mysql": {
+                "columnName": "create_time",
+                "dataType": "datetime",
+                "dataLength": null,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        },
+        "type": {
+            "type": "Number",
+            "required": false,
+            "length": 1,
+            "precision": null,
+            "scale": null,
+            "description": "1app用户 2后台",
+            "mysql": {
+                "columnName": "type",
+                "dataType": "int",
+                "dataLength": 1,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        },
+        "status": {
+            "type": "Number",
+            "required": false,
+            "length": 1,
+            "precision": null,
+            "scale": null,
+            "description": "1有效  2删除",
+            "mysql": {
+                "columnName": "status",
+                "dataType": "int",
+                "dataLength": 1,
+                "dataPrecision": null,
+                "dataScale": null,
+                "nullable": "Y"
+            }
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}
